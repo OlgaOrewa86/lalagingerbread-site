@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css" />
+
+</head>
+
+<body>
+
+  <!-- Header Section Code -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light gradient-background border-bottom mb-3">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="/">
+        <img src="./images/logo_watermark.png" alt="GingerDelight Logo" width="200">
+      </a>
+
+      <!-- Toggler button for mobile -->
+      <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="toggler-bar top-bar"></span>
+        <span class="toggler-bar middle-bar"></span>
+        <span class="toggler-bar bottom-bar"></span>
+      </button>
+
+
+      <!-- Collapsible nav links -->
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link px-2 link-body-emphasis" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2 link-body-emphasis" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2 link-body-emphasis" href="#gallery">Cookie Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2 link-body-emphasis" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Home Section Code  -->
+  <section id="home" class="py-5">
+    <div class="px-4 py-4 text-center "> <img class="d-block mx-auto mb-4 logo-img" src="./images/logo.webp"
+        alt="LaLaGingerbread logo" width="300">
+      <h1 class="display-5 slogan">Baked with Love, Sprinkled with Joy</h1>
+    </div>
+  </section>
+
+  <!-- About Section Code -->
+
+  <section id="about" class="gradient-background p-2">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-5 align-items-center">
+        <div class="col-lg-6">
+          <img src="./images/image5.webp" class="img-fluid rounded me-lg-4 mb-4" alt=" About LaLaGingerbread">
+        </div>
+        <div class="col-lg-6 about-text">
+          <h2 class="fw-bold mb-5">About LaLaGingerbread</h2>
+          <p class="lead">LaLaGingerbread began with a simple love for baking and a sprinkle of creativity. What started
+            as a weekend kitchen hobby quickly turned into a heartfelt passion for crafting whimsical, hand-decorated
+            gingerbread treats. Every cookie is lovingly baked, glazed, and sprinkled with joy—some even come on sticks
+            for an extra dose of fun!
+
+            Each piece is carefully wrapped in its own little bag, making it a delightful gift for birthdays, weddings,
+            or any special celebration. At LaLaGingerbread, we believe that every bite should bring a smile, a memory,
+            and a touch of magic.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Cookie Gallery Code -->
+  <section id="gallery" class="py-5">
+    <div class="container mt-5">
+      <div id="carouselExample" class="carousel slide w-75 mx-auto">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/image.webp" loading="lazy" class="d-block mx-auto carousel-img" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image0.webp" loading="lazy" class="d-block mx-auto carousel-img" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image1.webp" loading="lazy" class="d-block mx-auto carousel-img" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image2.webp" loading="lazy" class="d-block mx-auto carousel-img" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image3.webp" loading="lazy" class="d-block mx-auto carousel-img" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/image4.webp" loading="lazy" class="d-block mx-auto carousel-img" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section Code -->
+  <footer class=" text-center text-lg-start border-top mt-5 gradient-background">
+    <div class="container p-4">
+      <div class="row">
+        <!-- Contact Info -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0 text-start" id="contact">
+          <h5 class="text-uppercase">Contact Us</h5>
+          <p>Email: hello@lalagingerbread.com</p>
+          <p>Phone: +64 27 210 1281</p>
+          <p>Location: Auckland</p>
+        </div>
+
+
+        <!-- Social Media -->
+        <div class="col-lg-4 col-md-12 text-start ms-lg-auto">
+          <h5 class="text-uppercase">Follow Us</h5>
+          <a href="https://www.instagram.com/lalagingerbread/" target="_blank" rel="noopener">
+            <img src="images/instagram.svg" alt="Instagram icon" width="30" height="30" class="instagram-icon mt-1"
+              title="Follow us on Instagram">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center p-3 border-top">
+      © 2025 LaLaGingerbread
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"
+    defer></script>
+
+  <script>
+    document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        if (navbarCollapse.classList.contains('show')) {
+          const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+          bsCollapse.hide();
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>

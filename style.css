@@ -1,0 +1,226 @@
+* {
+  scroll-behavior: smooth;
+  font-family: "Georgia", serif;
+  font-style: italic;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #fef6e4;
+  --text-color: #8b4513;
+  --shadow-color: #f5e7c4;
+  --hover-color: #a0522d;
+}
+
+/* Background Animation */
+.gradient-background {
+  background: linear-gradient(300deg, #d6c79a, #edd9a1, #f5e7c4);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.slogan {
+  font-weight: normal;
+  text-shadow: 1px 1px var(--shadow-color);
+}
+
+.nav-link {
+  color: var(--text-color) !important;
+  font-weight: bold;
+  font-family: "Georgia", serif;
+  font-style: italic;
+  text-shadow: 1px 1px var(--shadow-color);
+  font-size: 1.5rem;
+}
+
+.nav-link:hover {
+  color: var(--hover-color) !important;
+  transform: translateY(-2px);
+}
+
+.carousel-img {
+  height: 550px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.about-text h2,
+p {
+  color: var(--text-color);
+}
+
+/* Icon and Toggler Styling */
+img.instagram-icon,
+.navbar-toggler {
+  filter: invert(22%) sepia(96%) saturate(748%) hue-rotate(359deg)
+    brightness(91%) contrast(91%);
+}
+
+img.instagram-icon:hover {
+  transform: scale(1.2) translateY(-5px);
+}
+
+.navbar-toggler {
+  border-color: #8b4513;
+}
+
+.custom-toggler {
+  border: none;
+  background: transparent;
+  padding: 0.5rem;
+  position: relative;
+  z-index: 1001;
+}
+
+.toggler-bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #8b4513;
+  transition: all 0.3s ease;
+}
+
+/* Animation to transform bars into an X when toggled */
+
+.custom-toggler[aria-expanded="true"] .top-bar {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.custom-toggler[aria-expanded="true"] .middle-bar {
+  opacity: 0;
+}
+
+.custom-toggler[aria-expanded="true"] .bottom-bar {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+/* Medium screens: Adjust layout and spacing */
+
+@media (max-width: 992px) {
+  [id] {
+    scroll-margin-top: 200px;
+  }
+
+  .about-text {
+    font-size: 1.1rem;
+    padding: 2rem;
+  }
+
+  .carousel-img {
+    max-height: 350px;
+  }
+
+  .about-text img,
+  .col-lg-6 img {
+    max-height: 350px;
+    object-fit: cover;
+  }
+
+  .col-lg-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+/* Small screens: Tighter spacing and font scaling */
+
+@media (max-width: 617px) {
+  [id] {
+    scroll-margin-top: 200px;
+  }
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  .about-text {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+  .carousel-img {
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  .about-text img,
+  .col-lg-6 img {
+    max-height: 200px;
+    object-fit: cover;
+  }
+
+  .col-lg-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .logo-img {
+    max-width: 200px;
+  }
+}
+
+/* Landscape mobile view fixes */
+
+@media (orientation: landscape) and (max-height: 450px) {
+  [id] {
+    scroll-margin-top: 130px;
+  }
+
+  .carousel-img {
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  .about-text img,
+  .col-lg-6 img {
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  .col-lg-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  .logo-img {
+    max-width: 200px;
+  }
+
+  #home {
+    padding-top: 1rem !important;
+  }
+  #home > .text-center {
+    padding: 0 !important;
+  }
+}
